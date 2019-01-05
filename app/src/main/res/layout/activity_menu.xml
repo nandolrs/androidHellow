@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/inputOrganizacaoSelecionar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#E3F2FD"
+        android:text="Token Json (Iot cliente)"
+        android:onClick="OrganizacaoSelecionar"
+        />
+
+    <TextView
+        android:id="@+id/inputUsuariosListar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Usuários"
+        android:layout_weight="1"
+        android:background="#BBDEFB"
+        android:onClick="UsuarioListar"
+
+    />
+
+    <TextView
+        android:id="@+id/inputOrcamentoListar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Orçamentos"
+        android:layout_weight="1"
+        android:background="#90CAF9"
+        android:onClick="OrcamentoListar"
+        />
+
+    <TextView
+        android:id="@+id/inputRecycleViewListar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Recycleview"
+        android:layout_weight="1"
+        android:background="#E3F2FD"
+        android:onClick="RecycleviewListar"
+        />
+
+
+    <TextView
+        android:id="@+id/inputIot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Controle remoto (Iot servidor)"
+        android:layout_weight="1"
+        android:background="#E3F2FD"
+        android:onClick="IotListar"
+        />
+
+</LinearLayout>

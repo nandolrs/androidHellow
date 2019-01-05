@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.nando.hellowword.MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/androidparty"
+        android:scaleType="centerCrop"
+
+        />
+
+    <TextView
+        android:id="@+id/nomeAniversariante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feliz aniversário! NOME_ANIVERSARIANTE"
+        android:layout_alignParentTop="true"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/nomeRemetente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dE, NOME_REMETENTE"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+
+        />
+
+</RelativeLayout>

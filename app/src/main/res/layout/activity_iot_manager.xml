@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nando.hellowword.IotManagerActivity"
+    >
+
+     <!-- dispositivo origem  -->
+
+    <TextView
+        android:id="@+id/labelDispositivoOrigemIp"
+        android:text="IP dispositivo origem"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <EditText
+        android:id="@+id/inputDispositivoOrigemIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        />
+
+    <!-- dispositivo destino  -->
+
+    <TextView
+        android:id="@+id/labelDispositivoDestinoIp"
+        android:text="IP dispositivo destino"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <EditText
+        android:id="@+id/inputDispositivoDestinoIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        />
+
+     <!--retorno-->
+
+     <TextView
+         android:id="@+id/labelMensagem"
+         android:text="Mensagem"
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         />
+
+     <EditText
+         android:id="@+id/inputMensagem"
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         />
+
+
+     <TextView
+         android:id="@+id/labelDispositivoRetorno"
+         android:text="Retorno do dispositivo"
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         />
+
+
+     <EditText
+         android:id="@+id/inputDispositivoRetorno"
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         />
+
+
+     // botões cima, baixo, esquerda, direita
+
+
+        <TextView
+            android:id="@+id/labelDispositivoDestinoCima"
+            android:text="(ir/go)"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            android:background="#9C27B0"
+            android:onClick="IotComandoIr"
+            />
+
+
+
+         <LinearLayout
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             >
+
+              <TextView
+                  android:id="@+id/labelDispositivoDestinoEsquerda"
+                  android:text="(esquerda / left)"
+
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:layout_weight="1"
+
+                  android:background="#E91E63"
+                  android:onClick="IotComandoEsquerda"
+                  />
+
+              <TextView
+                  android:id="@+id/labelDispositivoDestinoLigarDesligar"
+                  android:text="(ligar/desligar on/off)"
+
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:layout_weight="1"
+
+                  android:background="#2196F3"
+                  android:onClick="IotComandoLigarDesligar"
+
+                  />
+
+              <TextView
+                  android:id="@+id/labelDispositivoDestinoDireita"
+                  android:text="(direita/right)"
+
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:layout_weight="1"
+
+                  android:background="#E91E63"
+                  android:onClick="IotComandoDireita"
+                  />
+
+
+         </LinearLayout>
+
+
+     <TextView
+         android:id="@+id/labelDispositivoDestinoBaixo"
+         android:text="(voltar/back)"
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+
+         android:background="#9C27B0"
+         android:onClick="IotComandoVoltar"
+         />
+
+</LinearLayout>
+
+
+
+
+
